@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Storage (runtime data, never committed)
+storage/incoming/*
+storage/processing/*
+storage/sanitized/*
+!storage/incoming/.gitkeep
+!storage/processing/.gitkeep
+!storage/sanitized/.gitkeep
+storage/*.db
+
+# Node / Next.js
+apps/web/node_modules/
+apps/web/.next/
+apps/web/next-env.d.ts
+apps/web/.env.local
+
+# Env files
+.env
+apps/windows-agent/config.bat
+apps/windows-agent/logs/
+
+# OS / editor
+.DS_Store
+*.swp
